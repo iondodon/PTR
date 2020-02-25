@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="eventsource_ex" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/eventsource_ex/ebin" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/eventsource_ex/lib" />
+    </SOURCES>
+  </library>
+</component>
