@@ -1,7 +1,7 @@
 defmodule ActorModel do
 
   def main do
-    {initial_acc, collector_fun} = Collectable.into(MapSet.new())
+    {initial_acc, collector_fun} = Collectable.into(Collector.new())
 
     System.cmd(
       "curl", ["--silent", "http://localhost:4000/iot"],
@@ -11,7 +11,14 @@ defmodule ActorModel do
 
 end
 
-defimpl Collectable, for: MapSet do
+defmodule Collector do
+  # for protocols
+  defstruct []
+
+  def new, do: %__MODULE__{}
+end
+
+defimpl Collectable, for: Collector do
   def into(original) do
     collector_fun = fn
       set, {:cont, elem} -> IO.puts(elem)
