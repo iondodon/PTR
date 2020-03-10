@@ -1,13 +1,26 @@
 defmodule ActorModel do
 
   def main do
+    {initial_acc, collector_fun} = Collectable.into(MapSet.new())
+
     System.cmd(
       "curl", ["--silent", "http://localhost:4000/iot"],
-      into:  IO.stream(:stdio, :line)
+      into: initial_acc
     )
   end
 
 end
 
+defimpl Collectable, for: MapSet do
+  def into(original) do
+    collector_fun = fn
+      set, {:cont, elem} -> IO.puts(elem)
+      set, :done -> set
+      _set, :halt -> :ok
+    end
+
+    {original, collector_fun}
+  end
+end
 
 IO.puts(ActorModel.main)
