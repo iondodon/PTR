@@ -5,7 +5,7 @@ defmodule ActorModel.MixProject do
     [
       app: :actor_model,
       version: "0.1.0",
-      elixir: "~> 1.10",
+      elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -19,7 +19,7 @@ defmodule ActorModel.MixProject do
 
   defp deps do
     [
-      {:eventsource_ex, git: "https://github.com/cwc/eventsource_ex.git"}
+      {:eventsource_ex, "~> 0.0.2"},
     ]
   end
 end
