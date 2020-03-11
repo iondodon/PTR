@@ -2,7 +2,7 @@
 <module type="CPP_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Elixir" name="Elixir">
-      <configuration sdkName="Elixir 1.10.1" />
+      <configuration sdkName="Elixir 1.10.2" />
     </facet>
   </component>
   <component name="NewModuleRootManager">
@@ -38,5 +38,6 @@
     <orderEntry type="library" name="json" level="project" />
     <orderEntry type="library" name="excoveralls" level="project" />
     <orderEntry type="library" name="credo" level="project" />
+    <orderEntry type="library" name="Elixir 1.10.2" level="application" />
   </component>
 </module>
