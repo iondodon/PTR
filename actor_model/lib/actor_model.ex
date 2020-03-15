@@ -1,11 +1,21 @@
 defmodule ActorModel do
 
+  def prepare_supervisors() do
+    # set event-handlers supervisor
+    Supervisor.start_link([ {Task.Supervisor, name: EventHandler} ], strategy: :one_for_one)
+
+    # set ForecastStation supervisor
+    children = [ { ForecastStation, %{} } ]
+    Supervisor.start_link(children, strategy: :one_for_all)
+  end
+
+  def process_event(id, event, data, dispatch_ts) do
+    
+  end
+
   def handle_event(id, event, data, dispatch_ts) do
     {:ok, pid} = Task.Supervisor.start_child(EventHandler, fn ->
-      IO.inspect(id)
-      IO.inspect(event)
-      IO.inspect(data)
-      IO.inspect(dispatch_ts)
+      process_event(id, event, data, dispatch_ts)
     end)
   end
 
@@ -18,9 +28,10 @@ defmodule ActorModel do
   end
 
   def run() do
-    Supervisor.start_link([ {Task.Supervisor, name: EventHandler} ], strategy: :one_for_one)
+    prepare_supervisors()
 
     {:ok, pid} = EventsourceEx.new("http://localhost:4000/iot", stream_to: self())
+
     wait_for_event()
   end
 
