@@ -10,7 +10,12 @@ defmodule ActorModel do
   end
 
   def process_event(id, event, data, dispatch_ts) do
-    
+#    {status, list} = JSON.decode(data)
+
+#    IO.inspect(status)
+#    IO.inspect(list)
+
+    IO.inspect(dispatch_ts)
   end
 
   def handle_event(id, event, data, dispatch_ts) do

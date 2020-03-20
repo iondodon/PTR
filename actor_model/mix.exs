@@ -20,6 +20,7 @@ defmodule ActorModel.MixProject do
   defp deps do
     [
       {:eventsource_ex, "~> 0.0.2"},
+      {:json, "~> 1.2"}
     ]
   end
 end

@@ -39,5 +39,11 @@
     <orderEntry type="library" name="excoveralls" level="project" />
     <orderEntry type="library" name="credo" level="project" />
     <orderEntry type="library" name="Elixir 1.10.2" level="application" />
+    <orderEntry type="library" name="idna" level="project" />
+    <orderEntry type="library" name="mimerl" level="project" />
+    <orderEntry type="library" name="certifi" level="project" />
+    <orderEntry type="library" name="metrics" level="project" />
+    <orderEntry type="library" name="ssl_verify_fun" level="project" />
+    <orderEntry type="library" name="unicode_util_compat" level="project" />
   </component>
 </module>
