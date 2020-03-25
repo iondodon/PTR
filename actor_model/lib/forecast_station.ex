@@ -5,10 +5,6 @@ defmodule ForecastStation do
     Agent.start_link(fn -> initial_value end, name: __MODULE__)
   end
 
-#  def prepare_state() do
-#
-#  end
-
   def state do
     Agent.get(__MODULE__, & &1)
   end
