@@ -1,4 +1,4 @@
-defmodule WeatherDisplay do
+defmodule WeatherInterface do
 
   def start_station() do
     Supervisor.start_link([ {EventsHandler, nil} ], strategy: :one_for_one)
