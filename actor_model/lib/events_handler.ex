@@ -1,4 +1,9 @@
-defmodule ActorModel do
+defmodule EventsHandler do
+  use Task
+
+  def start_link(arg) do
+    Task.start_link(__MODULE__, :run, [arg])
+  end
 
   def handle_event(supervisor_pid, new_state) do
     event_handler = Task.Supervisor.async(supervisor_pid, fn ->
@@ -24,7 +29,7 @@ defmodule ActorModel do
     wait_for_event()
   end
 
-  def run() do
+  def run(arg) do
     # set ForecastStation and StateManager supervisor
     children = [ { ForecastStation, %{:updated_at => :nil, :weather => "JUST_A_NORMAL_DAY"} }, { StateManager, %{} } ]
     Supervisor.start_link(children, strategy: :one_for_all)
