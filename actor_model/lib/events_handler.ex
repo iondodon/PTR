@@ -14,10 +14,9 @@ defmodule EventsHandler do
 
   def fix_xml(xml) do
     xml = String.replace(xml, "us=", "us='")
-#    xml = String.replace(xml, ~r{[0-9]>}, "'")
-    position = Regex.run(~r{[0-9]>}, xml, return: :index)
-    IO.inspect(Regex.run(~r{[0-9]>}, xml, return: :index))
-    IO.inspect(String.split_at(xml, position[0][0]))
+    [{index, length}] = Regex.run(~r{[0-9]>}, xml, return: :index)
+    {head, tail} = String.split_at(xml, index + length - 1)
+    head <> "'" <> tail
   end
 
   def convert_data(supervisor_pid, new_event) do
@@ -32,9 +31,8 @@ defmodule EventsHandler do
       end
 
       if message != nil and is_binary(message) do
-        IO.inspect(message)
-        IO.inspect(fix_xml(message))
-#        IO.inspect(XmlToMap.naive_map(message))
+        message = fix_xml(message)
+        IO.inspect(XmlToMap.naive_map(message))
       end
 
     end
