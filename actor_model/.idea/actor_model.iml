@@ -8,6 +8,8 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/certifi" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/elixir_xml_to_map" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/erlsom" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/eventsource_ex" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/hackney" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/httpoison" />
@@ -45,5 +47,7 @@
     <orderEntry type="library" name="metrics" level="project" />
     <orderEntry type="library" name="ssl_verify_fun" level="project" />
     <orderEntry type="library" name="unicode_util_compat" level="project" />
+    <orderEntry type="library" name="elixir_xml_to_map" level="project" />
+    <orderEntry type="library" name="erlsom" level="project" />
   </component>
 </module>
