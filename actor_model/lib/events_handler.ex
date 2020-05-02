@@ -5,10 +5,10 @@ defmodule EventsHandler do
     Task.start_link(__MODULE__, :run, [arg])
   end
 
-  def handle_event(supervisor_pid, new_data) do
+  def handle_event(supervisor_pid, message) do
       # dynamically create tasks
       event_handler = Task.Supervisor.async(supervisor_pid, fn ->
-        StateManager.start_link(new_data["message"])
+        StateManager.start_link(message)
       end)
   end
 
@@ -30,9 +30,10 @@ defmodule EventsHandler do
         handle_event(supervisor_pid, message)
       end
 
-      if message != nil and is_binary(message) do
+      if is_binary(message) do
         message = fix_xml(message)
-        IO.inspect(XmlToMap.naive_map(message))
+        message = XmlToMap.naive_map(message)
+        handle_event(supervisor_pid, message)
       end
 
     end
@@ -53,14 +54,11 @@ defmodule EventsHandler do
     children = [ { ForecastStation, %{
       :atmo_pressure => nil,
       :wind_speed => nil,
-      :timestamp_atmo_wind => nil,
-
       :light => nil,
-      :timestamp_light => nil,
-
       :humidity => nil,
       :temperature => nil,
-      :timestamp_hum_temp => nil
+      :updated_at => nil,
+      :description => nil
     } }, { StateManager, nil } ]
 
     Supervisor.start_link(children, strategy: :one_for_all)
