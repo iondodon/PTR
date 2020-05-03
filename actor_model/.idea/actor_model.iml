@@ -49,5 +49,6 @@
     <orderEntry type="library" name="unicode_util_compat" level="project" />
     <orderEntry type="library" name="elixir_xml_to_map" level="project" />
     <orderEntry type="library" name="erlsom" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Erlang SDK" level="project" />
   </component>
 </module>

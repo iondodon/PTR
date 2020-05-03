@@ -1,5 +1,6 @@
 defmodule ForecastStation do
   use Agent
+
   # state holder that can be accessed by multiple processes
 
   def start_link(initial_value) do
@@ -11,6 +12,6 @@ defmodule ForecastStation do
   end
 
   def update(new_state) do
-    Agent.update(__MODULE__, & &1 = new_state)
+    Agent.update(__MODULE__, &(&1 = new_state))
   end
 end
