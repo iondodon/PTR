@@ -1,17 +1,17 @@
 defmodule BrokerSupervisor do
   use Supervisor
+  @broker_port 2052
 
   def start_link do
-    IO.inspect("Started")
     Supervisor.start_link(__MODULE__, [])
   end
 
 
   def init(_) do
     children = [
-      worker(Broker, [])
+      worker(Broker, [@broker_port])
     ]
 
-    supervise(children, strategy: :one_for_all)
+    Supervisor.init(children, strategy: :one_for_one)
   end
 end

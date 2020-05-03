@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/broker.iml" filepath="$PROJECT_DIR$/.idea/broker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/message_broker_app.iml" filepath="$PROJECT_DIR$/message_broker_app.iml" />
     </modules>
   </component>
 </project>

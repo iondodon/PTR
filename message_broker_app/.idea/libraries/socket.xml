@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_build/dev/lib/socket/ebin" />
     </CLASSES>
+    <JAVADOC />
     <SOURCES>
       <root url="file://$PROJECT_DIR$/deps/socket/lib" />
     </SOURCES>
