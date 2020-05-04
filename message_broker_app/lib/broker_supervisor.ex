@@ -3,13 +3,14 @@ defmodule BrokerSupervisor do
   @broker_port 2052
 
   def start_link do
-    Supervisor.start_link(__MODULE__, [])
+    Supervisor.start_link(__MODULE__, [], name: __MODULE__)
   end
-
 
   def init(_) do
     children = [
-      worker(Broker, [@broker_port])
+      worker(MessageListener, [@broker_port]),
+      worker(MessageQueue, [:queue.new()]),
+      worker(Broker, [])
     ]
 
     Supervisor.init(children, strategy: :one_for_one)

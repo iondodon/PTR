@@ -2,47 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5e2cbaf-5f04-41f8-a434-64e7bae58907" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.formatter.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ex_doc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/socket.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/broker.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/broker_supervisor.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/message_broker_app.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message_broker_app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mix.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rebar3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/broker_test.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_helper.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/testare.exs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/.formatter.exs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/.idea/broker.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/.idea/libraries/Erlang_SDK.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/.idea/libraries/ex_doc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/.idea/libraries/socket.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/.idea/rebar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/lib/broker.ex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/lib/broker_supervisor.ex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/lib/message_broker_app.ex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/mix.exs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/mix.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/rebar3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/test/broker_test.exs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../broker/test/test_helper.exs" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/message_listener.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/message_queue.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actor_model/lib/forecast_station.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../actor_model/lib/forecast_station.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actor_model/lib/state_manager.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../actor_model/lib/state_manager.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/broker.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/broker.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/broker_supervisor.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/broker_supervisor.ex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +36,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../actor_model" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.22758621" />
@@ -99,7 +65,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588527909138</updated>
-      <workItem from="1588527916525" duration="1384000" />
+      <workItem from="1588527916525" duration="1693000" />
+      <workItem from="1588579024934" duration="13345000" />
     </task>
     <servers />
   </component>
@@ -118,9 +85,13 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="139" y="-4" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1588528633737" />
-    <state x="464" y="96" width="426" height="473" key="FileChooserDialogImpl" timestamp="1588528607825">
+    <state x="198" y="-18" width="959" height="757" key="CommitChangelistDialog2" timestamp="1588587713657">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="464" y="96" width="426" height="473" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1588528607825" />
+    <state x="198" y="-18" width="959" height="757" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588587713657" />
+    <state x="463" y="78" width="426" height="473" key="FileChooserDialogImpl" timestamp="1588579075397">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="78" width="426" height="473" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1588579075397" />
   </component>
 </project>

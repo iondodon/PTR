@@ -14,18 +14,32 @@ defmodule StateManager do
       wind_speed = (sensors["wind_speed_sensor_1"] + sensors["wind_speed_sensor_2"]) / 2
       timestamp_atmo_wind = sensors["unix_timestamp_100us"]
 
-      ForecastStation.update(%{
-        old_state
-        | :atmo_pressure => atmo_pressure,
-          :wind_speed => wind_speed,
-          :updated_at => timestamp_atmo_wind
-      })
+      new_state = %{old_state |
+        :atmo_pressure => atmo_pressure,
+        :wind_speed => wind_speed,
+        :updated_at => timestamp_atmo_wind
+      }
+      ForecastStation.update(new_state)
+
+      # TODO: to fix this
+      case :gen_udp.open(2053) do
+        {:ok, socket} -> :gen_udp.send(socket, {127,0,0,1}, 2052, new_state)
+        {:error, _reason} -> nil
+      end
     end
 
     if Map.has_key?(sensors, "light_sensor_1") do
       light = (sensors["light_sensor_1"] + sensors["light_sensor_2"]) / 2
       timestamp_light = sensors["unix_timestamp_100us"]
-      ForecastStation.update(%{old_state | :light => light, :updated_at => timestamp_light})
+
+      new_state = %{old_state | :light => light, :updated_at => timestamp_light}
+      ForecastStation.update(new_state)
+
+      # TODO: to fix this
+      case :gen_udp.open(2053) do
+        {:ok, socket} -> :gen_udp.send(socket, {127,0,0,1}, 2052, "hello0")
+        {:error, _reason} -> nil
+      end
     end
 
     if Map.has_key?(sensors, "SensorReadings") do
@@ -44,12 +58,18 @@ defmodule StateManager do
       humidity = (humidity_percent0 + humidity_percent1) / 2
       temperature = (temperature_celsius0 + temperature_celsius0) / 2
 
-      ForecastStation.update(%{
-        old_state
-        | :humidity => humidity,
-          :temperature => temperature,
-          :updated_at => timestamp_hum_temp
-      })
+      new_state = %{old_state |
+        :humidity => humidity,
+        :temperature => temperature,
+        :updated_at => timestamp_hum_temp
+      }
+      ForecastStation.update(new_state)
+
+      # TODO: to fix this
+      case :gen_udp.open(2053) do
+        {:ok, socket} -> :gen_udp.send(socket, {127,0,0,1}, 2052, "hello1")
+        {:error, _reason} -> nil
+      end
     end
 
     update_weather_description
