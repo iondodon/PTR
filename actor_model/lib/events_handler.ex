@@ -1,5 +1,6 @@
 defmodule EventsHandler do
   use Task
+  @joiner_subscriber_port 2054
 
   def start_link(arg) do
     Task.start_link(__MODULE__, :run, [arg])
@@ -9,7 +10,7 @@ defmodule EventsHandler do
     # dynamically create tasks
     event_handler =
       Task.Supervisor.async(supervisor_pid, fn ->
-        StateManager.start_link(message)
+        PreBrokerProcessor.start_link(message)
       end)
   end
 
@@ -64,7 +65,9 @@ defmodule EventsHandler do
   end
 
   def run(arg) do
-    # set ForecastStation and StateManager supervisor
+
+    {:ok, socket} = :gen_udp.open(@joiner_subscriber_port)
+
     children = [
       {ForecastStation,
        %{
@@ -73,13 +76,17 @@ defmodule EventsHandler do
          :light => nil,
          :humidity => nil,
          :temperature => nil,
-         :updated_at => nil,
-         :description => nil
+         :timestamp_atmo_wind => nil,
+         :timestamp_light => nil,
+         :timestamp_hum_temp => nil
        }},
-      {StateManager, nil}
+      {PreBrokerProcessor, nil},
+      {JoinerSubscriber, []}
     ]
 
     Supervisor.start_link(children, strategy: :one_for_all)
+
+    Task.async(fn -> JoinerSubscriber.listen_broker end)
 
     {:ok, pid} = EventsourceEx.new("http://localhost:4000/iot", stream_to: self())
     {:ok, pid} = EventsourceEx.new("http://localhost:4000/sensors", stream_to: self())

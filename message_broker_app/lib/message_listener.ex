@@ -1,4 +1,3 @@
-# echo -n "hello world" | nc -4u -w1 localhost 2052
 defmodule MessageListener do
   use GenServer
 
@@ -17,14 +16,22 @@ defmodule MessageListener do
   end
 
   defp handle_packet(data, socket) do
-    # print the message
-
-    MessageQueue.update(:queue.in(data, MessageQueue.state()))
+    handle_message(Poison.decode!(data))
 
     # GenServer will understand this to mean "continue waiting for the next message"
     # parameters:
     # :noreply - no reply is needed
     # new_state: keep the socket as the current state
     {:noreply, socket}
+  end
+
+  defp handle_message(%{"action" => "feed_broker", "sensor_data" => sensor_data}) do
+    IO.inspect(sensor_data)
+    MessageQueue.update(:queue.in(sensor_data, MessageQueue.state()))
+  end
+
+  defp handle_message(%{"action" => "subscribe", "topic" => topic, "subscriber_port" => subscriber_port}) do
+    IO.inspect("topic: #{topic}")
+    IO.inspect("subscriber_port: #{subscriber_port}")
   end
 end

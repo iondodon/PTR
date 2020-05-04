@@ -21,7 +21,8 @@ defmodule ActorModel.MixProject do
     [
       {:eventsource_ex, "~> 0.0.2"},
       {:json, "~> 1.2"},
-      {:elixir_xml_to_map, "~> 1.0.1"}
+      {:elixir_xml_to_map, "~> 1.0.1"},
+      {:poison, "~> 3.1"}
     ]
   end
 end

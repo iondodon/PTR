@@ -13,8 +13,7 @@ defmodule Broker do
   def feed_loop() do
     queue = MessageQueue.state()
     if not :queue.is_empty(queue) do
-      {element, new_queue}= :queue.out(queue)
-      IO.inspect(element)
+      {element, new_queue} = :queue.out(queue)
       MessageQueue.update(new_queue)
     end
     feed_loop()

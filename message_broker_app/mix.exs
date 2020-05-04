@@ -22,7 +22,8 @@ defmodule MessageBrokerApp.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:socket, "~> 0.3"}
+      {:socket, "~> 0.3"},
+      {:poison, "~> 3.1"}
     ]
   end
 end
