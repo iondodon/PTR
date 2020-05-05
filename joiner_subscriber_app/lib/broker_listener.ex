@@ -10,7 +10,7 @@ defmodule BrokerListener do
   end
 
 
-  def init(state) do
+  def init(_) do
     socket = :gen_udp.open(@joiner_subscriber_port, [:binary, active: true])
     socket
   end
@@ -28,7 +28,14 @@ defmodule BrokerListener do
 
 
   defp handle_message(%{"action" => "feed", "data" => data}) do
-#    IO.inspect(data)
+    sensors_input = data["sensor_data"]
+    # TODO: to improve this
+    IO.inspect Enum.each(Map.keys(sensors_input), fn key ->
+      sensors_state = ForecastStation.state()
+      sensors_state = Map.put(sensors_state, key, sensors_input[key])
+      ForecastStation.update(sensors_state)
+    end)
+    IO.inspect(ForecastStation.state())
   end
 
 

@@ -2,6 +2,7 @@ defmodule Joiner do
 
 
 
+
   def update_weather_description do
     old_state = ForecastStation.state()
 

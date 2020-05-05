@@ -2,94 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5e2cbaf-5f04-41f8-a434-64e7bae58907" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/joiner_subscriber_app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/benchfella.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/earmark.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/ex_doc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/exjsx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/jazz.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/jiffy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/poison.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/socket.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/base_supervisor.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/broker_listener.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/joiner.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/joiner_subscriber_app.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/mix.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/mix.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/test/joiner_subscriber_app_test.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/test/test_helper.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spreader.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/subscriptions_registry.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../remote_listener/.formatter.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../remote_listener/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../remote_listener/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../remote_listener/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../remote_listener/lib/remote_listener.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../remote_listener/test/test_helper.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.formatter.exs" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.formatter.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/actor_model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/actor_model.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/dictionaries/ion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/dictionaries/ion.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/Erlang_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/Erlang_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/benchfella.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/benchfella.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/certifi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/certifi.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/cowboy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/cowboy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/credo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/credo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/dialyxir.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/dialyxir.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/earmark.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/earmark.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/elixir_xml_to_map.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/elixir_xml_to_map.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/erlsom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/erlsom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/eventsource_ex.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/eventsource_ex.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/ex_doc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/ex_doc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/excoveralls.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/excoveralls.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/exjsx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/exjsx.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/hackney.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/hackney.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/httparrot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/httparrot.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/httpoison.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/httpoison.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/idna.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/idna.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/jazz.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/jazz.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/jiffy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/jiffy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/json.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/meck.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/meck.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/metrics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/metrics.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/mimerl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/mimerl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/mimic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/mimic.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/parse_trans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/parse_trans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/plug.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/plug.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/poison.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/poison.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/ssl_verify_fun.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/ssl_verify_fun.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/unicode_util_compat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/unicode_util_compat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/rebar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/rebar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/lib/events_handler.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/lib/event_listener.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/lib/forecast_station.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/forecast_station.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/lib/joiner_subscriber.ex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/lib/pre_broker_processor.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/lib/pre_broker_processor.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/lib/weather_interface.ex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/mix.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/mix.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/mix.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/rebar3" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/rebar3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/test/actor_model_test.exs" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/test/actor_model_test.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/test/test_helper.exs" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/dictionaries/ion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joiner_subscriber_app/lib/base_supervisor.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/base_supervisor.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joiner_subscriber_app/lib/broker_listener.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/broker_listener.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joiner_subscriber_app/lib/joiner.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/joiner.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/broker.ex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/broker_supervisor.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/broker_supervisor.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/message_broker_app.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/message_broker_app.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/message_listener.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/message_listener.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/message_queue.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/message_queue.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message_broker_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/message_broker_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../remote_listener/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +71,7 @@
       <workItem from="1588675411014" duration="7870000" />
       <workItem from="1588684497910" duration="769000" />
       <workItem from="1588685837949" duration="163000" />
-      <workItem from="1588686032670" duration="8456000" />
+      <workItem from="1588686032670" duration="10202000" />
     </task>
     <servers />
   </component>
