@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="idna" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../remote_listener/_build/dev/lib/idna/ebin" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../remote_listener/deps/idna/src" />
+    </SOURCES>
+  </library>
+</component>

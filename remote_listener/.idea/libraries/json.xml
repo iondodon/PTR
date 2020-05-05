@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="json" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../remote_listener/_build/dev/lib/json/ebin" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../remote_listener/deps/json/lib" />
+    </SOURCES>
+  </library>
+</component>

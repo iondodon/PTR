@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5e2cbaf-5f04-41f8-a434-64e7bae58907" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/joiner_subscriber_app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/benchfella.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/earmark.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/ex_doc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/exjsx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/jazz.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/jiffy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/poison.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/libraries/socket.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/base_supervisor.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/broker_listener.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/joiner.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/joiner_subscriber_app.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/mix.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/mix.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/test/joiner_subscriber_app_test.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/test/test_helper.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spreader.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/subscriptions_registry.ex" afterDir="false" />
+    <list default="true" id="9fce3e86-a558-48bf-81be-3b77c3105a13" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/joiner_subscriber_app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/benchfella.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/earmark.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ex_doc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/exjsx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jazz.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jiffy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/poison.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/socket.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/base_supervisor.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/joiner.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/joiner_subscriber_app.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mix.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/joiner_subscriber_app_test.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_helper.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../message_broker_app/lib/spreader.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../message_broker_app/lib/subscriptions_registry.ex" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../remote_listener/.formatter.exs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../remote_listener/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../remote_listener/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../remote_listener/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../remote_listener/lib/remote_listener.ex" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../remote_listener/test/test_helper.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.formatter.exs" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.formatter.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actor_model/.formatter.exs" beforeDir="false" afterPath="$PROJECT_DIR$/.formatter.exs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/.idea/actor_model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/actor_model.iml" afterDir="false" />
@@ -67,14 +66,15 @@
       <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/poison.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/poison.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/ssl_verify_fun.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/ssl_verify_fun.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/.idea/libraries/unicode_util_compat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/libraries/unicode_util_compat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actor_model/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/.idea/rebar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/.idea/rebar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/lib/events_handler.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/lib/event_listener.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../actor_model/lib/forecast_station.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/forecast_station.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actor_model/lib/forecast_station.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/forecast_station.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/lib/joiner_subscriber.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actor_model/lib/joiner_subscriber.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/broker_listener.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/lib/pre_broker_processor.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/lib/pre_broker_processor.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/lib/weather_interface.ex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/mix.exs" afterDir="false" />
@@ -82,14 +82,14 @@
       <change beforePath="$PROJECT_DIR$/../actor_model/rebar3" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/rebar3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/test/actor_model_test.exs" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/test/actor_model_test.exs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../actor_model/test/test_helper.exs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/broker.ex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/broker_supervisor.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/broker_supervisor.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/message_broker_app.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/message_broker_app.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/message_listener.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/message_listener.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/message_queue.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/message_queue.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message_broker_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/message_broker_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../message_broker_app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../message_broker_app/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../message_broker_app/lib/broker.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../message_broker_app/lib/broker_supervisor.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../message_broker_app/lib/broker_supervisor.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../message_broker_app/lib/message_broker_app.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../message_broker_app/lib/message_broker_app.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../message_broker_app/lib/message_listener.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../message_broker_app/lib/message_listener.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../message_broker_app/lib/message_queue.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../message_broker_app/lib/message_queue.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../message_broker_app/message_broker_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../message_broker_app/message_broker_app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../message_broker_app/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/../message_broker_app/mix.exs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,39 +99,40 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="CLEAR_OUTPUT_DIRECTORY" value="false" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Elixir GenServer" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1bPJgtWP3QElqCeTOO6yonytjdN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1bUPTSHwKnY42V5HkQb5gpIkJQ7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../joiner_subscriber_app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.22758621" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.25747126" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="Elixir" type="MixRunConfigurationType" factoryName="Elixir Mix">
-      <module name="message_broker_app" />
+      <module name="joiner_subscriber_app" />
       <working-directory url="file://$PROJECT_DIR$" />
-      <module name="message_broker_app" />
+      <module name="joiner_subscriber_app" />
       <module-filters inherit-application-module-filters="true" />
       <method v="2" />
     </configuration>
@@ -141,59 +142,58 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e5e2cbaf-5f04-41f8-a434-64e7bae58907" name="Default Changelist" comment="" />
-      <created>1588527909138</created>
+      <changelist id="9fce3e86-a558-48bf-81be-3b77c3105a13" name="Default Changelist" comment="" />
+      <created>1588683706634</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1588527909138</updated>
-      <workItem from="1588527916525" duration="1693000" />
-      <workItem from="1588579024934" duration="13945000" />
-      <workItem from="1588602168699" duration="11187000" />
-      <workItem from="1588675411014" duration="7870000" />
-      <workItem from="1588684497910" duration="769000" />
-      <workItem from="1588685837949" duration="163000" />
-      <workItem from="1588686032670" duration="8456000" />
+      <updated>1588683706634</updated>
+      <workItem from="1588683710823" duration="20000" />
+      <workItem from="1588683739369" duration="619000" />
+      <workItem from="1588684496731" duration="183000" />
+      <workItem from="1588684696802" duration="564000" />
+      <workItem from="1588686088913" duration="9050000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="269" y="-9" width="802" height="701" key="#Plugins" timestamp="1588687874300">
+    <state x="158" y="-7" width="1026" height="757" key="#Project_Structure" timestamp="1588685234392">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="269" y="-9" width="802" height="701" key="#Plugins/0.0.1366.768@0.0.1366.768" timestamp="1588687874300" />
-    <state x="169" y="9" width="1026" height="757" key="#Project_Structure" timestamp="1588527983823">
+    <state x="158" y="-7" width="1026" height="757" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1588685234392" />
+    <state x="140" y="14" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588684760693">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="169" y="9" width="1026" height="757" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1588527983823" />
-    <state x="139" y="-4" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588528633737">
+    <state x="140" y="14" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1588684760693" />
+    <state x="464" y="96" width="426" height="473" key="FileChooserDialogImpl" timestamp="1588684750971">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="139" y="-4" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1588528633737" />
-    <state x="379" y="158" width="598" height="385" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588693600766">
+    <state x="464" y="96" width="426" height="473" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1588684750971" />
+    <state width="1364" height="362" key="GridCell.Tab.0.bottom" timestamp="1588685260199">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="158" width="598" height="385" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1588693600766" />
-    <state x="198" y="-18" width="959" height="757" key="CommitChangelistDialog2" timestamp="1588587713657">
+    <state width="1364" height="362" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588685260199" />
+    <state width="1364" height="362" key="GridCell.Tab.0.center" timestamp="1588685260198">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="198" y="-18" width="959" height="757" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588587713657" />
-    <state x="446" y="43" width="426" height="473" key="FileChooserDialogImpl" timestamp="1588686084690">
+    <state width="1364" height="362" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588685260198" />
+    <state width="1364" height="362" key="GridCell.Tab.0.left" timestamp="1588685260198">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="446" y="43" width="426" height="473" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1588686084690" />
-    <state x="54" y="4" width="1241" height="740" key="new project wizard" timestamp="1588680813466">
+    <state width="1364" height="362" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588685260198" />
+    <state width="1364" height="362" key="GridCell.Tab.0.right" timestamp="1588685260199">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="54" y="4" width="1241" height="740" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1588680813466" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1588611217195">
+    <state width="1364" height="362" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588685260199" />
+    <state x="169" y="9" key="SettingsEditor" timestamp="1588684594706">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1588611217195" />
+    <state x="169" y="9" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1588684594706" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1588684943702">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1588684943702" />
   </component>
 </project>

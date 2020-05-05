@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="certifi" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../remote_listener/_build/dev/lib/certifi/ebin" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../remote_listener/deps/certifi/src" />
+      <root url="file://$PROJECT_DIR$/deps/certifi/priv" />
+    </SOURCES>
+  </library>
+</component>

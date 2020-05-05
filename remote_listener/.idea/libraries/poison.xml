@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="poison" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../remote_listener/_build/dev/lib/poison/ebin" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../remote_listener/deps/poison/lib" />
+    </SOURCES>
+  </library>
+</component>

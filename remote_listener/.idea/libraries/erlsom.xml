@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="erlsom" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../remote_listener/_build/dev/lib/erlsom/ebin" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../remote_listener/deps/erlsom/src" />
+      <root url="file://$PROJECT_DIR$/../remote_listener/deps/erlsom/priv" />
+    </SOURCES>
+  </library>
+</component>

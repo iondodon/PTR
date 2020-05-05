@@ -25,13 +25,14 @@ defmodule MessageListener do
     {:noreply, socket}
   end
 
-  defp handle_message(%{"action" => "feed_broker", "sensor_data" => sensor_data}) do
-    IO.inspect(sensor_data)
-    MessageQueue.update(:queue.in(sensor_data, MessageQueue.state()))
+  defp handle_message(%{"action" => "feed_broker", "data" => data}) do
+    MessageQueue.update(:queue.in(data, MessageQueue.state()))
   end
 
   defp handle_message(%{"action" => "subscribe", "topic" => topic, "subscriber_port" => subscriber_port}) do
-    IO.inspect("topic: #{topic}")
-    IO.inspect("subscriber_port: #{subscriber_port}")
+    registry = SubscriptionsRegistry.state()
+    new_registry = registry ++ [{subscriber_port, topic}]
+    SubscriptionsRegistry.update(new_registry)
+    IO.inspect("Service on port #{subscriber_port} has subscribed on topic #{topic}.")
   end
 end
