@@ -16,7 +16,10 @@ defmodule MessageListener do
   end
 
   defp handle_packet(data, socket) do
-    handle_message(Poison.decode!(data))
+    data = Poison.decode!(data)
+    IO.inspect("Received:")
+    IO.inspect(data)
+    handle_message(data)
 
     # GenServer will understand this to mean "continue waiting for the next message"
     # parameters:
@@ -34,5 +37,12 @@ defmodule MessageListener do
     new_registry = registry ++ [{subscriber_port, topic}]
     SubscriptionsRegistry.update(new_registry)
     IO.inspect("Service on port #{subscriber_port} has subscribed on topic #{topic}.")
+  end
+
+  defp handle_message(%{"action" => "unsubscribe", "topic" => topic, "subscriber_port" => subscriber_port}) do
+    registry = SubscriptionsRegistry.state()
+    new_registry = registry -- [{subscriber_port, topic}]
+    SubscriptionsRegistry.update(new_registry)
+    IO.inspect("Service on port #{subscriber_port} has unsubscribed on topic #{topic}.")
   end
 end

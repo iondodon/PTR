@@ -28,6 +28,8 @@ defmodule Spreader do
 
 
   defp send_to_subscriber(socket, subscriber_port, feed) do
+    IO.inspect("Send to subscriber #{subscriber_port}.")
+    IO.inspect(feed)
     :gen_udp.send(socket, {127,0,0,1}, subscriber_port, feed)
   end
 

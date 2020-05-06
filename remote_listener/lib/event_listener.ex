@@ -61,6 +61,8 @@ defmodule EventListener do
         })
     end
 
+#    :timer.sleep(1000)
+
     # infinite loop
     wait_for_event(supervisor_pid)
   end

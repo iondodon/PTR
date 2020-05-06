@@ -28,20 +28,19 @@ defmodule BrokerListener do
 
 
   defp handle_message(%{"action" => "feed", "data" => data}) do
-    sensors_input = data["sensor_data"]
-    # TODO: to improve this
-    IO.inspect Enum.each(Map.keys(sensors_input), fn key ->
-      sensors_state = ForecastStation.state()
-      sensors_state = Map.put(sensors_state, key, sensors_input[key])
-      ForecastStation.update(sensors_state)
-    end)
-    IO.inspect(ForecastStation.state())
+    Joiner.join(data["sensor_data"])
   end
 
 
   def subscribe(topic) do
     socket = :sys.get_state(BrokerListener)
     message = %{:action => "subscribe", :topic => topic, :subscriber_port => @joiner_subscriber_port}
+    :gen_udp.send(socket, {127,0,0,1}, @broker_port, Poison.encode!(message))
+  end
+
+  def unsubscribe(topic) do
+    socket = :sys.get_state(BrokerListener)
+    message = %{:action => "unsubscribe", :topic => topic, :subscriber_port => @joiner_subscriber_port}
     :gen_udp.send(socket, {127,0,0,1}, @broker_port, Poison.encode!(message))
   end
 

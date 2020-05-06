@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5e2cbaf-5f04-41f8-a434-64e7bae58907" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/dictionaries/ion.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../joiner_subscriber_app/lib/base_supervisor.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/base_supervisor.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../joiner_subscriber_app/lib/broker_listener.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/broker_listener.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../joiner_subscriber_app/lib/joiner.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../joiner_subscriber_app/lib/joiner.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../remote_listener/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/message_listener.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/message_listener.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spreader.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/spreader.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../remote_listener/lib/event_listener.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/lib/event_listener.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../remote_listener/lib/pre_broker_processor.ex" beforeDir="false" afterPath="$PROJECT_DIR$/../remote_listener/lib/pre_broker_processor.ex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,7 @@
       <workItem from="1588675411014" duration="7870000" />
       <workItem from="1588684497910" duration="769000" />
       <workItem from="1588685837949" duration="163000" />
-      <workItem from="1588686032670" duration="10202000" />
+      <workItem from="1588686032670" duration="11347000" />
     </task>
     <servers />
   </component>

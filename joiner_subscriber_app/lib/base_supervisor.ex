@@ -18,9 +18,8 @@ defmodule BaseSupervisor do
           "light" => nil,
           "humidity" => nil,
           "temperature" => nil,
-          "timestamp_atmo_wind" => nil,
-          "timestamp_light" => nil,
-          "timestamp_hum_temp" => nil
+          "timestamp" => nil,
+          "weather_description" => nil
         }]),
       worker(BrokerListener, []),
     ]
