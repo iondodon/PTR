@@ -1,0 +1,9 @@
+{application,message_broker_app,
+             [{applications,[kernel,stdlib,elixir,logger,socket,poison]},
+              {description,"message_broker_app"},
+              {modules,['Elixir.BrokerSupervisor','Elixir.MessageBrokerApp',
+                        'Elixir.MessageListener','Elixir.MessageQueue',
+                        'Elixir.Spreader','Elixir.SubscriptionsRegistry']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {mod,{'Elixir.MessageBrokerApp',[]}}]}.

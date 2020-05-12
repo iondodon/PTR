@@ -1,3 +1,5 @@
+# this supervisor will restart all the workers it supervises is at least one of them shuts down
+# also, is start all the workers for the first time
 defmodule BaseSupervisor do
   use Supervisor
 
@@ -10,6 +12,7 @@ defmodule BaseSupervisor do
 
 
   def init(_) do
+    # define the workers and their initial state, (children)
     children = [
       worker(ForecastStation,
         [%{
@@ -24,6 +27,7 @@ defmodule BaseSupervisor do
       worker(BrokerListener, []),
     ]
 
+    # start the workers
     Supervisor.init(children, strategy: :one_for_all)
   end
 
